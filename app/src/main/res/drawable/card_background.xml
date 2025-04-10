@@ -1,0 +1,19 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado normal (oculto) -->
+    <item android:state_pressed="false" android:state_selected="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#6200EE" />
+            <corners android:radius="8dp" />
+            <stroke android:width="2dp" android:color="#3700B3" />
+        </shape>
+    </item>
+
+    <!-- Estado revelado -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="8dp" />
+            <stroke android:width="2dp" android:color="#3700B3" />
+        </shape>
+    </item>
+</selector>

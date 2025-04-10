@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Título superior -->
+
+    <!-- Texto Bienvenido -->
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="412dp"
+        android:layout_height="61dp"
+        android:background="#DDDDDD"
+        android:padding="8dp"
+        android:text="APPSIoT - Lab 2"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Imagen -->
+
+    <!-- Botón Software -->
+
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_width="165dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="60dp"
+        android:text="Bienvenido"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+    <!-- Botón Ciberseguridad -->
+
+    <!-- Botón Ópticas -->
+    <ImageView
+        android:id="@+id/ivIcono"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="Icono de antena"
+        android:src="@drawable/antena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBienvenido" />
+
+    <Button
+        android:id="@+id/btnSoftware"
+        android:layout_width="190dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="40dp"
+        android:text="Software"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivIcono"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnCiberseguridad"
+        android:layout_width="190dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="35dp"
+        android:text="Ciberseguridad"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSoftware" />
+
+    <Button
+        android:id="@+id/btnOpticas"
+        android:layout_width="190dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="35dp"
+        android:text="Ópticas"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCiberseguridad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
